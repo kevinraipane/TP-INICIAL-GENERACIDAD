@@ -136,6 +136,38 @@ public class Main {
                     int repeticionesFrutas = HerramientasArrayList.contarRepeticiones(frutas, "manzana");
                     System.out.println("La fruta 'manzana' aparece " + repeticionesFrutas + " veces en el ArrayList de String.");
                     break;
+                case 7:
+                    Almacen<String> frutas7 = new Almacen<>();
+                    frutas7.agregar("manzana");
+                    frutas7.agregar("naranja");
+                    frutas7.agregar("banana");
+                    frutas7.agregar("manzana");
+                    frutas7.agregar("pera");
+
+                    frutas7.mostrarTodos();
+                    frutas7.eliminar(2);
+                    System.out.println("Elimino el elemento de indice 2.");
+                    frutas7.mostrarTodos();
+                    break;
+                case 8:
+                    /**
+                    Almacen<Integer> numeritos8 = new Almacen<>();
+                    numeritos8.agregar(5);
+                    numeritos8.agregar(15);
+                    numeritos8.agregar(8);
+                    numeritos8.agregar(20);
+                    numeritos8.agregar(3);
+
+                    System.out.println("Numeros cargados:");
+                    numeritos8.mostrarTodos();
+
+                    //Filtro los mayores a 10
+                    Almacen<Integer> mayoresQueDiez = numeritos8.filtrarPorCondicion(n -> n > 10);
+                    */
+                case 9:
+                    //Almacen de String con Integer
+
+                    break;
                 case 11:
                     salir = true;
                     System.out.println("Saliendo...");
