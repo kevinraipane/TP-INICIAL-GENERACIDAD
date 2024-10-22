@@ -166,7 +166,24 @@ public class Main {
                     */
                 case 9:
                     //Almacen de String con Integer
+                    AlmacenMapa<String, Integer> patentes = new AlmacenMapa<>();
+                    patentes.agregar("ABC",123);
+                    patentes.agregar("QWE",456);
+                    patentes.agregar("ASD",789);
+                    patentes.agregar("poi",471);
 
+                    System.out.println("Patentes cargadas: ");
+                    patentes.mostrarTodos();
+
+                    System.out.println("Obtener patente iniciada con QWE");
+                    System.out.println(patentes.obtener("QWE"));
+
+                    System.out.println("Eliminar patente inicada por 'poi'");
+                    patentes.eliminar("poi");
+                    patentes.mostrarTodos();
+                    break;
+                case 10:
+                    //Preguntar como hacer
                     break;
                 case 11:
                     salir = true;
